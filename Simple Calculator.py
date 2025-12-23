@@ -10,8 +10,9 @@ print("1. Addition")
 print("2. Subtraction")
 print("3. Multiplication")
 print("4. Division")
+print("5. Modulus")
 
-choice = input("Enter choice (1/2/3/4): ")
+choice = input("Enter choice (1/2/3/4/5): ")
 
 # Performing calculation
 if choice == '1':
@@ -28,6 +29,8 @@ elif choice == '4':
         print("Result:", num1 / num2)
     else:
         print("Error: Division by zero")
+elif choice == '5':
+    print("Modulus:", num1 % num2)
 
 else:
     print("Invalid choice")
